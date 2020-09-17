@@ -5,6 +5,7 @@ fun main() {
     }
 }
 
+// source에 같은 원소가 있을 경우를 고려하지 않음
 fun <T> getPermutation(source: List<T>, count: Int): List<List<T>> {
     when {
         count < 0 -> {
