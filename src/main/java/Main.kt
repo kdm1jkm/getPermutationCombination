@@ -1,9 +1,19 @@
 import java.util.*
 import kotlin.collections.ArrayList
 
-fun main() {
-    getCombination(listOf(1, 2, 3, 4), 2).forEach {
-        println(it.toString())
+fun main(args: Array<String>) {
+    println(args.contentToString())
+    when (args[0]) {
+        "p" -> {
+            getPermutation(args.toList().subList(1, args.size - 1), args[args.size - 1].toInt()).forEach {
+                println(it.toString())
+            }
+        }
+        "c" -> {
+            getCombination(args.toList().subList(1, args.size - 1), args[args.size - 1].toInt()).forEach {
+                println(it.toString())
+            }
+        }
     }
 }
 
