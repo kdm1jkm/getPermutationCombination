@@ -2,7 +2,6 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 fun main(args: Array<String>) {
-    println(args.contentToString())
     when (args[0]) {
         "p" -> {
             getPermutation(args.toList().subList(1, args.size - 1), args[args.size - 1].toInt()).forEach {
