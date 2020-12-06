@@ -53,7 +53,7 @@ fun <T> getPermutation(source: List<T>, count: Int): List<List<T>> {
 
 
 fun <T> getCombination(source: List<T>, count: Int): List<List<T>> {
-    // 재귀함수의 종료 조선
+    // 재귀함수의 종료 조건
     when {
         count < 0 ->
             throw IndexOutOfBoundsException()
